@@ -3529,6 +3529,7 @@ label {
 /*--------------------------------------------------------------
 7. Header
 ----------------------------------------------------------------*/
+
 .cs-site_header {
   position: relative;
   z-index: 101;
@@ -3870,22 +3871,22 @@ label {
 }
 
 .cs-sticky_header {
-  position: fixed !important;
+  position: fixed ;
   width: 100%;
   z-index: 999;
 }
 
 .cs-gescout_sticky {
-  position: fixed !important;
+  position: fixed ;
   top: -110px;
-  opacity: 0;
+  opacity: 1;
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
   background-color: #000;
 }
 
 .cs-gescout_show {
-  top: 0 !important;
+  top: 0 ;
   opacity: 1;
 }
 
