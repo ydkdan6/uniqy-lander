@@ -792,7 +792,7 @@
 
   /*--------------------------------------------------------------
     22. Cursor Animation
-
+  --------------------------------------------------------------*/
   $(function () {
     $('body').append('<span class="cs-cursor_lg d"></span>');
     $('body').append('<span class="cs-cursor_sm"></span>');
@@ -809,30 +809,29 @@
       $('.cs-cursor_sm').removeClass('opacity-0');
     });
   });
-  function cursorMovingAnimation(event) {
-    try {
-      const timing = gsap.timeline({
-        defaults: {
-          x: event.clientX,
-          y: event.clientY,
-        },
-      });
+  // function cursorMovingAnimation(event) {
+  //   try {
+  //     const timing = gsap.timeline({
+  //       defaults: {
+  //         x: event.clientX,
+  //         y: event.clientY,
+  //       },
+  //     });
 
-      timing
-        .to('.cs-cursor_lg', {
-          ease: 'power2.out',
-        })
-        .to(
-          '.cs-cursor_sm',
-          {
-            ease: 'power2.out',
-          },
-          '-=0.4',
-        );
-    } catch (err) {
-      console.log(err);
-    }
-  }
-  document.addEventListener('mousemove', cursorMovingAnimation);
-})(jQuery); // End of use strict
-  --------------------------------------------------------------*/
+  //     timing
+  //       .to('.cs-cursor_lg', {
+  //         ease: 'power2.out',
+  //       })
+  //       .to(
+  //         '.cs-cursor_sm',
+  //         {
+  //           ease: 'power2.out',
+  //         },
+  //         '-=0.4',
+  //       );
+  //   } catch (err) {
+  //     console.log(err);
+  //   }
+  // }
+  // document.addEventListener('mousemove', cursorMovingAnimation);
+})(jQuery); 
