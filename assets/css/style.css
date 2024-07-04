@@ -3871,22 +3871,22 @@ label {
 }
 
 .cs-sticky_header {
-  position: fixed ;
+  position: fixed important;
   width: 100%;
   z-index: 999;
 }
 
 .cs-gescout_sticky {
-  position: fixed ;
+  position: fixed important;
   top: -110px;
-  opacity: 1;
+  opacity: 0;
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
   background-color: #000;
 }
 
 .cs-gescout_show {
-  top: 0 ;
+  top: 0 !important;
   opacity: 1;
 }
 
